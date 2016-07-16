@@ -1,8 +1,9 @@
 import { Template } from 'meteor/templating';
 import { Tasks } from '../api/tasks.js';
- 
+
+import './task.js';
 import './body.html';
- 
+
 // Ajout des Helpers == Data context pour Blaze
 Template.body.helpers({
   tasks() {
