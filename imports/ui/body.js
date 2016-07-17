@@ -7,8 +7,10 @@ import './task.js';
 import './body.html';
 
 
+// Launch once on loading app
 Template.body.onCreated(function bodyOnCreated() {
   this.state = new ReactiveDict();
+  Meteor.subscribe('tasks');
 });
 
 // Ajout des Helpers == Data context pour Blaze
